@@ -37,7 +37,7 @@ public class ProductCollectionViewCell: UICollectionViewCell {
     private func setUpBackground() {
         contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 10
-        contentView.layer.shadowColor = UIColor.black.cgColor
+        contentView.layer.shadowColor = AppColors.arsenicDark.cgColor
         contentView.layer.shadowOpacity = 0.1
         contentView.layer.shadowRadius = 4
         contentView.layer.shadowOffset = CGSize(width: 0, height: 2)
@@ -81,14 +81,13 @@ public class ProductCollectionViewCell: UICollectionViewCell {
         }
         
         priceLabel.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(10)
+            make.top.equalTo(titleLabel.snp.bottom).offset(8)
             make.leading.equalTo(titleLabel.snp.leading)
         }
         addToCartButton.snp.makeConstraints { make in
             make.top.equalTo(priceLabel.snp.bottom).offset(10)
             make.leading.trailing.equalToSuperview().inset(10)
             make.bottom.equalToSuperview().inset(10)
-            make.height.equalTo(35)
         }
     }
     
