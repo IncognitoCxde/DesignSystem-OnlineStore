@@ -1,7 +1,7 @@
 //  CollectionCategory
 
 public struct CollectionCategory: Codable {
-    let name: String
+    public let name: String
     
     public init(name: String) {
         self.name = name
