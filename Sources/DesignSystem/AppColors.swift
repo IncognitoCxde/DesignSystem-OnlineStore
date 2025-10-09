@@ -29,4 +29,7 @@ public struct AppColors {
     public static var vanilla: UIColor {
         UIColor(named: "Vanilla", in: .designSystemBundle, compatibleWith: nil)!
     }
+    public static var mediumGrey: UIColor {
+        UIColor(named: "MediumGrey", in: .designSystemBundle, compatibleWith: nil)!
+    }
 }

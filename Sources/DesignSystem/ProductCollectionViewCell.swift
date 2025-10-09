@@ -78,16 +78,19 @@ public class ProductCollectionViewCell: UICollectionViewCell {
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(imageView.snp.bottom).offset(10)
             make.leading.trailing.equalTo(imageView).inset(10)
+            make.height.equalTo(20)
         }
         
         priceLabel.snp.makeConstraints { make in
             make.top.equalTo(titleLabel.snp.bottom).offset(8)
             make.leading.equalTo(titleLabel.snp.leading)
+            make.height.equalTo(20)
         }
         addToCartButton.snp.makeConstraints { make in
             make.top.equalTo(priceLabel.snp.bottom).offset(10)
             make.leading.trailing.equalToSuperview().inset(10)
             make.bottom.equalToSuperview().inset(10)
+            make.height.equalTo(25)
         }
     }
     
