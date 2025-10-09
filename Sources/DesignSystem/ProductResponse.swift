@@ -2,6 +2,10 @@
 
 import DesignSystem
 
-struct ProductResponse {
+public struct ProductResponse {
     let products: [Product]
+    
+    public init(products: [Product]) {
+        self.products = products
+    }
 }
