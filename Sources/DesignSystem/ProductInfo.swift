@@ -1,4 +1,4 @@
-// Product Info
+//  ProductInfo Model
 
 public struct ProductInfo {
     let id: Int?
@@ -16,10 +16,3 @@ public struct ProductInfo {
     }
 }
 
-public struct ProductInfoResponse {
-    let productInfo: [ProductInfo]
-    
-    public init(productInfo: [ProductInfo]) {
-        self.productInfo = productInfo
-    }
-}

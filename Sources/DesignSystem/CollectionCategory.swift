@@ -1,7 +1,6 @@
-// Category & Categories Response
+//  CollectionCategory
 
-
-public struct Category: Codable {
+public struct CollectionCategory: Codable {
     let name: String
     
     public init(name: String) {
@@ -10,9 +9,9 @@ public struct Category: Codable {
 }
 
 public struct CategoriesResponse: Codable {
-    let categories: [Category]
+    let categories: [CollectionCategory]
     
-    public init(categories: [Category]) {
+    public init(categories: [CollectionCategory]) {
         self.categories = categories
     }
 }
