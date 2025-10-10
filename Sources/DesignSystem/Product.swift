@@ -1,12 +1,12 @@
 
 
 public struct Product: Codable {
-    let id: Int?
-    let title: String?
-    let images: [String]?
-    let price: Double?
-    
-    public init(id: Int, title: String, images: [String], price: Double) {
+    public let id: Int?
+    public let title: String?
+    public let images: [String]?
+    public let price: Double?
+
+    public init(id: Int?, title: String?, images: [String]?, price: Double?) {
         self.id = id
         self.title = title
         self.images = images
