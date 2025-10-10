@@ -2,7 +2,7 @@
 import Foundation
 
 extension Bundle {
-    static var designSystemBundle: Bundle {
+    public static var designSystemBundle: Bundle {
         return Bundle.module
     }
 }

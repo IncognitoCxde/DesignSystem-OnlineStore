@@ -1,4 +1,4 @@
-
+// Product
 
 public struct Product: Codable {
     public let id: Int?

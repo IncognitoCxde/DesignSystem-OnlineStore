@@ -9,7 +9,7 @@ public struct CollectionCategory: Codable {
 }
 
 public struct CategoriesResponse: Codable {
-    let categories: [CollectionCategory]
+    public let categories: [CollectionCategory]
     
     public init(categories: [CollectionCategory]) {
         self.categories = categories
