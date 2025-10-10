@@ -1,6 +1,5 @@
 //  ProductResponse
 
-import DesignSystem
 
 public struct ProductResponse {
     let products: [Product]
